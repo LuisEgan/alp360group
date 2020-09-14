@@ -1,25 +1,7 @@
-const config = require('./config.ts');
+// We register the TypeScript evaluator in gatsby-config so we don't need to do
+// it in any other .js file. It automatically reads TypeScript config from
+// tsconfig.json.
+require("ts-node").register();
 
-module.exports = {
-  pathPrefix: config.pathPrefix,
-  siteMetadata: {
-    title: config.siteTitle,
-  },
-  plugins: [
-    'gatsby-plugin-react-helmet',
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: config.manifestName,
-        short_name: config.manifestShortName,
-        start_url: config.pathPrefix || config.manifestStartUrl,
-        background_color: config.manifestBackgroundColor,
-        theme_color: config.manifestThemeColor,
-        display: config.manifestDisplay,
-        icon: config.manifestIcon,
-      },
-    },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-offline',
-  ],
-};
+// Use a TypeScript version of gatsby-config.js.
+module.exports = require("./gatsby-config.ts");

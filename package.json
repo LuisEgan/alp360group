@@ -23,6 +23,7 @@
     "serve": "gatsby serve",
     "clean": "rimraf .cache public",
     "prettier": "prettier src/**/*.{ts,tsx,scss} --write",
+    "lint": "eslint src/**/*.{ts,tsx} --no-error-on-unmatched-pattern",
     "lint:fix": "eslint src/**/*.{ts,tsx} --fix --no-error-on-unmatched-pattern",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -43,11 +44,11 @@
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
+    "ts-node": "^9.0.0",
     "typescript": "^4.0.2"
   },
   "husky": {
-    "hooks": {
-    }
+    "hooks": {}
   },
   "lint-staged": {
     "*.ts": [

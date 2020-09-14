@@ -7,9 +7,9 @@ const Footer = () => (
       <h2 className="major">Get in touch</h2>
       <p>
         Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
-        Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis
-        egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in
-        tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.
+        Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas,
+        purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed
+        ac elementum arcu. Quisque placerat auctor laoreet.
       </p>
       <form method="post" action="/#">
         <div className="fields">
@@ -23,7 +23,7 @@ const Footer = () => (
           </div>
           <div className="field">
             <label htmlFor="message">Message</label>
-            <textarea name="message" id="message" rows="4" />
+            <textarea name="message" id="message" rows={4} />
           </div>
         </div>
         <ul className="actions">
@@ -47,12 +47,7 @@ const Footer = () => (
         })}
       </ul>
       <ul className="copyright">
-        <li>&copy; Solid State. All rights reserved.</li>
-        <li>
-          Design:
-          {" "}
-          <a href="http://html5up.net">HTML5 UP</a>
-        </li>
+        <li>&copy; von Bergen Real State. All rights reserved.</li>
       </ul>
     </div>
   </section>

@@ -2,9 +2,10 @@ import React, { useState, FC, useEffect } from "react";
 import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 
-import "../sass/main.scss";
 import Footer from "./Footer";
 import SideBar from "./Sidebar";
+
+import "../sass/main.scss";
 
 const siteMetaDataQuery = graphql`
   query SiteTitleQuery {

@@ -119,6 +119,25 @@
   }
 }
 
+.no-diag {
+  &:before,
+  &:after {
+    display: none !important;
+  }
+}
+
+.no-diag-top {
+  &:before {
+    display: none !important;
+  }
+}
+
+.no-diag-bot {
+  &:after {
+    display: none !important;
+  }
+}
+
 .wrapper {
   background-color: _palette(bg);
   margin: _size(wrapper-edges, large) 0;
