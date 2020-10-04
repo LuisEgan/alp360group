@@ -1,6 +1,6 @@
 export default {
-  siteTitle: "von Bergen Real State", // <title>
-  manifestName: "von Bergen Real State",
+  siteTitle: "ALP360 Group", // <title>
+  manifestName: "ALP360 Gruop",
   manifestShortName: "Landing", // max 12 characters
   manifestStartUrl: "/",
   manifestBackgroundColor: "#663399",
@@ -14,26 +14,11 @@ export default {
     "Sea para invertir o vivir te damos las herramientas para tomar una decisión inteligente",
   socialLinks: [
     {
-      icon: "fa-github",
-      name: "Github",
-      url: "https://github.com/anubhavsrivastava",
-    },
-    {
-      icon: "fa-twitter",
-      name: "Twitter",
-      url: "https://twitter.com/onlyanubhav",
-    },
-    {
-      icon: "fa-facebook",
-      name: "Facebook",
-      url: "https://facebook.com/theanubhav",
-    },
-    {
       icon: "fa-envelope-o",
       name: "Email",
-      url: "mailto:anubhav.srivastava00@gmail.com",
+      url: "mailto:letstalk@alp360group.com",
     },
   ],
-  phone: "000-00000",
-  address: "305 Del Sol, Sunnyvale, CA",
+  phone: "+56 9 3426 1966",
+  address: "DIRECCION DE LA CORREDORA EN USA",
 };

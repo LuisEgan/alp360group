@@ -1,19 +1,20 @@
 {
-  "name": "miami",
+  "name": "alp360group",
   "version": "0.0.1",
-  "description": "Miami",
+  "description": "ALP360 Group official webpage",
   "dependencies": {
-    "gatsby": "^2.20.2",
+    "gatsby": "^2.24.67",
     "gatsby-plugin-manifest": "^2.3.1",
     "gatsby-plugin-offline": "^3.1.0",
     "gatsby-plugin-react-helmet": "^3.2.0",
-    "gatsby-plugin-sass": "^2.2.0",
-    "node-sass": "^4.13.1",
+    "gatsby-plugin-sass": "^2.3.14",
+    "node-sass": "^4.14.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
     "react-images": "^1.1.0",
     "react-scrollspy": "^3.4.2",
+    "react-svg": "^11.0.42",
     "smoothscroll-polyfill": "^0.4.4"
   },
   "scripts": {
@@ -44,6 +45,7 @@
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "rimraf": "^3.0.2",
+    "tailwindcss": "^1.8.10",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.2"
   },
@@ -60,10 +62,5 @@
       "yarn run lint:fix"
     ]
   },
-  "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "gatsby-starter-solidstate"
-  ],
   "license": "MIT"
 }

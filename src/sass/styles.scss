@@ -1,0 +1,46 @@
+.opaque-bg {
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.image {
+  height: 12em;
+  max-width: unset !important;
+
+  img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .svg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    svg {
+      stroke: white;
+      width: 8rem;
+      height: 8rem;
+    }
+
+    > div {
+      height: 12em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.tilt-section-img {
+  img {
+    opacity: 0.3;
+  }
+}

@@ -4,17 +4,12 @@ import config from "../../config";
 const Footer = () => (
   <section id="footer">
     <div className="inner">
-      <h2 className="major">Get in touch</h2>
-      <p>
-        Cras mattis ante fermentum, malesuada neque vitae, eleifend erat.
-        Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas,
-        purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed
-        ac elementum arcu. Quisque placerat auctor laoreet.
-      </p>
+      <h2 className="major">Hablemos</h2>
+      <p>Envíanos un mensaje y te contáctaremos lo más pronto posible</p>
       <form method="post" action="/#">
         <div className="fields">
           <div className="field">
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name">Nombre</label>
             <input type="text" name="name" id="name" />
           </div>
           <div className="field">
@@ -22,13 +17,13 @@ const Footer = () => (
             <input type="email" name="email" id="email" />
           </div>
           <div className="field">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Mensaje</label>
             <textarea name="message" id="message" rows={4} />
           </div>
         </div>
         <ul className="actions">
           <li>
-            <input type="submit" value="Send Message" />
+            <input type="submit" value="Enviar mensaje" />
           </li>
         </ul>
       </form>
@@ -47,7 +42,7 @@ const Footer = () => (
         })}
       </ul>
       <ul className="copyright">
-        <li>&copy; von Bergen Real State. All rights reserved.</li>
+        <li>&copy; ALP360 Group. All rights reserved.</li>
       </ul>
     </div>
   </section>

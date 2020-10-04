@@ -7,6 +7,7 @@ export default {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-offline",
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -19,7 +20,14 @@ export default {
         icon: config.manifestIcon,
       },
     },
-    "gatsby-plugin-sass",
-    "gatsby-plugin-offline",
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        postCssPlugins: [
+          require("tailwindcss"),
+          require("./tailwind.config.js"),
+        ],
+      },
+    },
   ],
 };
