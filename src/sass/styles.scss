@@ -23,6 +23,7 @@
     top: 0;
     right: 0;
     left: 0;
+    height: 100%;
 
     svg {
       stroke: white;
@@ -40,6 +41,8 @@
 }
 
 .tilt-section-img {
+  max-width: 12em !important;
+
   img {
     opacity: 0.3;
   }
