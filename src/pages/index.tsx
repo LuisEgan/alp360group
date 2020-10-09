@@ -1,7 +1,5 @@
 import React from "react";
 
-import { ReactSVG } from "react-svg";
-
 import Layout from "../components/Layout";
 
 import config from "../../config";
@@ -12,7 +10,6 @@ import pic3 from "../assets/images/pic03.jpg";
 import pic4 from "../assets/images/pic04.jpg";
 import pic5 from "../assets/images/pic05.jpg";
 import pic6 from "../assets/images/pic06.jpg";
-import pic7 from "../assets/images/pic07.jpg";
 
 import dollar from "../assets/images/dollar.png";
 import bank from "../assets/images/bank.png";
@@ -20,70 +17,12 @@ import file from "../assets/images/file.png";
 import house from "../assets/images/house.png";
 import pen from "../assets/images/pen.png";
 import key from "../assets/images/key.png";
-
-interface ICard {
-  imgSrc: string;
-  title: string;
-  description: string;
-}
-const Card = (props: ICard) => {
-  const { imgSrc, title, description } = props;
-  return (
-    <article>
-      <a href="/#" className="image">
-        <img src={imgSrc} alt="" />
-      </a>
-      <h3 className="major">{title}</h3>
-      <p>{description}</p>
-      <a href="/#" className="special">
-        Learn more
-      </a>
-    </article>
-  );
-};
-
-type styleNum = 1 | 2 | 3 | 4 | 5 | 6;
-interface ITiltSection {
-  alt?: boolean;
-  styleNum?: styleNum;
-  imgSrc?: string;
-  svgSrc?: string;
-  title: string;
-  description: string;
-}
-const TiltSection = (props: ITiltSection) => {
-  const {
-    alt,
-    styleNum = 1,
-    imgSrc = pic1,
-    svgSrc = "dollar-sign.svg",
-    title,
-    description,
-  } = props;
-
-  return (
-    <section
-      className={`wrapper spotlight style${styleNum} ${alt ? "alt" : ""}`}
-    >
-      <div className="inner">
-        <div className="image tilt-section-img">
-          <img src={imgSrc} alt="" />
-          <ReactSVG src={svgSrc} className="svg" />
-        </div>
-        <div className="content">
-          <h2 className="major">{title}</h2>
-          <p>{description}</p>
-          <a href="/#" className="special">
-            Learn more
-          </a>
-        </div>
-      </div>
-    </section>
-  );
-};
+import Footer from "../components/Footer";
+import Card from "../components/Card";
+import TiltSection from "../components/TiltSection";
 
 const IndexPage = () => (
-  <Layout>
+  <Layout hasFooter={false}>
     <section id="banner">
       <div className="inner">
         <h2>{config.heading}</h2>
@@ -103,13 +42,6 @@ const IndexPage = () => (
             <Card imgSrc={pic5} title="House 5" description="something" />
             <Card imgSrc={pic6} title="House 6" description="something" />
           </section>
-          <ul className="actions">
-            <li>
-              <a href="/#" className="button">
-                Browse All
-              </a>
-            </li>
-          </ul>
         </div>
       </section>
 
@@ -163,6 +95,8 @@ const IndexPage = () => (
         description="Te ayudamos en todo el camino"
       />
     </section>
+
+    <Footer />
   </Layout>
 );
 

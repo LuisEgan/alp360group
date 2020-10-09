@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "ALP360 Group official webpage",
   "dependencies": {
+    "axios": "^0.20.0",
     "gatsby": "^2.24.67",
     "gatsby-plugin-manifest": "^2.3.1",
     "gatsby-plugin-offline": "^3.1.0",
@@ -12,6 +13,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
+    "react-hook-form": "^6.9.2",
+    "react-image-gallery": "^1.0.8",
     "react-images": "^1.1.0",
     "react-scrollspy": "^3.4.2",
     "react-svg": "^11.0.42",

@@ -19,10 +19,11 @@ const siteMetaDataQuery = graphql`
 
 interface ILayout {
   fullMenu?: boolean;
+  hasFooter?: boolean;
 }
 
 const Layout: FC<ILayout> = (props) => {
-  const { children, fullMenu } = props;
+  const { children, fullMenu, hasFooter = true } = props;
 
   const [isPreloaded, setIsPreloaded] = useState(true);
 
@@ -56,7 +57,8 @@ const Layout: FC<ILayout> = (props) => {
             <div id="page-wrapper">
               <SideBar fullMenu={fullMenu} />
               {children}
-              <Footer />
+
+              {hasFooter && <Footer />}
             </div>
           </div>
         </>
